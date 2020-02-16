@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-views-count',
@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class ViewsCountComponent implements OnInit {
 
   constructor() { }
+
+  @Input() count: string;
 
   ngOnInit(): void {
   }

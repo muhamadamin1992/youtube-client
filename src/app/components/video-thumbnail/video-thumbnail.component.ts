@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IThumbnail } from '../../models/thumbnail.model'
 
 @Component({
   selector: 'app-video-thumbnail',
@@ -8,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class VideoThumbnailComponent implements OnInit {
 
   constructor() { }
+
+  @Input() thumbnail: IThumbnail;
 
   ngOnInit(): void {
   }
