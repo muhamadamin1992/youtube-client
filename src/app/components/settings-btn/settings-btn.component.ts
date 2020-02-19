@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-settings-btn',
   templateUrl: './settings-btn.component.html',
-  styleUrls: ['./settings-btn.component.css']
+  styleUrls: ['./settings-btn.component.scss']
 })
-export class SettingsBtnComponent implements OnInit {
+export class SettingsBtnComponent {
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }
