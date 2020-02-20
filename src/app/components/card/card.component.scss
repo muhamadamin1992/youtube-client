@@ -1,0 +1,15 @@
+.card {
+  border-bottom: 5px solid;
+
+  &--bd {
+    &-red {
+      border-color: #eb5757;
+    }
+    &-green {
+      border-color: #27aE60;
+    }
+    &-blue {
+      border-color: #2f80ed;
+    }
+  }
+}

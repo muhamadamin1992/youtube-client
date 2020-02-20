@@ -1,3 +1,9 @@
 <div class="search-results">
-  <app-card *ngFor="let card of response.items | filter: filterText | sort: sortText" [card]="card"></app-card>
+  <div class="container">
+    <div class="row">
+      <div *ngFor="let card of response.items | filter: filterText | sort: sortText" class="col-lg-3">
+        <app-card [card]="card"></app-card>
+      </div>
+    </div>
+  </div>
 </div>

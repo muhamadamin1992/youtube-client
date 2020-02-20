@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card" [ngClass]="borderClass">
   <app-video-thumbnail [thumbnail]="card.snippet.thumbnails.medium"></app-video-thumbnail>
   <div class="card__info">
     <app-views-count [count]="card.statistics.viewCount"></app-views-count>

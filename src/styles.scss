@@ -21,6 +21,11 @@ a {
   text-decoration: underline;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   margin: 0 auto;
   width: 1170px;
@@ -79,5 +84,19 @@ a {
     overflow: hidden;
     background-position: center;
     background-repeat: no-repeat;
+  }
+}
+
+.bd {
+  &-red {
+    border-color: red;
+  }
+
+  &-green {
+    border-color: green;
+  }
+
+  &-blue {
+    border-color: blue;
   }
 }
