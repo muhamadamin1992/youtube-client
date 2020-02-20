@@ -27,7 +27,6 @@ export class HeaderComponent {
   }
 
   public onCriteriaToggle(): void {
-    console.log(this.criteriaOpened, 'test');
     this.criteriaOpened = !this.criteriaOpened;
   }
 }
