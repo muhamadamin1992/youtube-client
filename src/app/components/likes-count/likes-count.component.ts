@@ -1,17 +1,14 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-likes-count',
   templateUrl: './likes-count.component.html',
   styleUrls: ['./likes-count.component.css']
 })
-export class LikesCountComponent implements OnInit {
+export class LikesCountComponent {
+
+  @Input() public count: string;
 
   constructor() { }
-
-  @Input() count: string;
-
-  ngOnInit(): void {
-  }
 
 }

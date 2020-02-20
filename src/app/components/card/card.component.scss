@@ -1,5 +1,12 @@
 .card {
+  display: flex;
   border-bottom: 5px solid;
+  padding: 20px;
+  height: 100%;
+  background-color: #e5e5e5;
+  text-align: center;
+  border-radius: 5px;
+  flex-direction: column;
 
   &--bd {
     &-red {
@@ -11,5 +18,12 @@
     &-blue {
       border-color: #2f80ed;
     }
+  }
+
+  &__info {
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
   }
 }

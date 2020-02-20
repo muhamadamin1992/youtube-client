@@ -69,7 +69,12 @@ img {
   display: none;
 }
 
+.mb-30 {
+  margin-bottom: 30px;
+}
+
 .btn {
+  display: inline-block;
   border: none;
   padding: 5px 12px;
   background-color: #2F80ED;
@@ -84,19 +89,5 @@ img {
     overflow: hidden;
     background-position: center;
     background-repeat: no-repeat;
-  }
-}
-
-.bd {
-  &-red {
-    border-color: red;
-  }
-
-  &-green {
-    border-color: green;
-  }
-
-  &-blue {
-    border-color: blue;
   }
 }
