@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-settings-btn',
@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
 })
 export class SettingsBtnComponent {
 
+  @Output() public criteriaToggle: EventEmitter<void> = new EventEmitter();
+
   constructor() { }
+
+  public onCriteriaToggle(event: Event): void {
+    event.preventDefault();
+    this.criteriaToggle.emit();
+  }
 
 }

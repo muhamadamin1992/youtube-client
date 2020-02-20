@@ -10,6 +10,7 @@ export class HeaderComponent {
   @Output() public searchText: EventEmitter<String> = new EventEmitter();
   @Output() public sort: EventEmitter<String> = new EventEmitter();
   @Output() public filter: EventEmitter<String> = new EventEmitter();
+  public criteriaOpened: boolean = false;
 
   constructor() { }
 
@@ -23,5 +24,10 @@ export class HeaderComponent {
 
   public onFilter(text: string): void {
     this.filter.emit(text);
+  }
+
+  public onCriteriaToggle(): void {
+    console.log(this.criteriaOpened, 'test');
+    this.criteriaOpened = !this.criteriaOpened;
   }
 }

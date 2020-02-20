@@ -5,7 +5,7 @@
         <div class="page-header__center">
           <app-logo class="page-header__logo"></app-logo>
           <app-search class="page-header__search" (searchText)="onSearch($event)"></app-search>
-          <app-settings-btn></app-settings-btn>
+          <app-settings-btn (criteriaToggle)="onCriteriaToggle()"></app-settings-btn>
         </div>
       </div>
       <div class="col-lg-3">
@@ -14,7 +14,7 @@
     </div>
     <div class="row justify-content-center">
       <div class="col-lg-6">
-        <app-filtering-criteria (sort)="onSort($event)" (filter)="onFilter($event)"></app-filtering-criteria>
+        <app-filtering-criteria (sort)="onSort($event)" (filter)="onFilter($event)" [ngClass]="{'d-none': !criteriaOpened}"></app-filtering-criteria>
       </div>
     </div>
   </div>
