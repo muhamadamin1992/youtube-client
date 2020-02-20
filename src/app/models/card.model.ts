@@ -1,9 +1,9 @@
 import { IThumbnail } from './thumbnail.model';
 
 export interface ICard {
-  kind: string,
-  etag: string,
-  id: string,
+  kind: string;
+  etag: string;
+  id: string;
   snippet: {
     publishedAt: string,
     channelId: string,
@@ -12,6 +12,7 @@ export interface ICard {
     thumbnails: {
       default: IThumbnail,
       medium: IThumbnail,
+      standard: IThumbnail,
       high: IThumbnail,
       maxres: IThumbnail,
     },
@@ -19,17 +20,18 @@ export interface ICard {
     tags: string[],
     categoryId: string,
     liveBroadcastContent: string,
+    defaultLanguage?: string,
     localized: {
       title: string,
       description: string,
     },
     defaultAudioLanguage: string,
-  },
+  };
   statistics: {
     viewCount: string,
     likeCount: string,
     dislikeCount: string,
     favoriteCount: string,
     commentCount: string,
-  }
+  };
 }
