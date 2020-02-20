@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public title: string = 'youtube-client';
+  public searchText: string = '';
+
+  public onSearch(text: string): void {
+    this.searchText = text;
+  }
 }

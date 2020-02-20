@@ -4,7 +4,7 @@
       <div class="col-lg-6">
         <div class="page-header__center">
           <app-logo class="page-header__logo"></app-logo>
-          <app-search class="page-header__search"></app-search>
+          <app-search class="page-header__search" (searchText)="onSearch($event)"></app-search>
           <app-settings-btn></app-settings-btn>
         </div>
       </div>

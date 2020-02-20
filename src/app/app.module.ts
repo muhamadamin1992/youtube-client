@@ -20,6 +20,7 @@ import { DislikesCountComponent } from './components/dislikes-count/dislikes-cou
 import { CommentsCountComponent } from './components/comments-count/comments-count.component';
 import { VideoTitleComponent } from './components/video-title/video-title.component';
 import { MoreButtonComponent } from './components/more-button/more-button.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { MoreButtonComponent } from './components/more-button/more-button.compon
     MoreButtonComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { response } from '../mock-response';
 import { ISearchResponse } from '../../models/search-response.model';
 
@@ -7,13 +7,10 @@ import { ISearchResponse } from '../../models/search-response.model';
   templateUrl: './search-results.component.html',
   styleUrls: ['./search-results.component.css']
 })
-export class SearchResultsComponent implements OnInit {
-
-  constructor() { }
+export class SearchResultsComponent {
 
   public response: ISearchResponse = response;
 
-  ngOnInit(): void {
-  }
+  constructor() { }
 
 }
