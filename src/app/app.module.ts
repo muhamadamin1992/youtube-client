@@ -21,6 +21,7 @@ import { VideoTitleComponent } from './components/video-title/video-title.compon
 import { MoreButtonComponent } from './components/more-button/more-button.component';
 import { FormsModule } from '@angular/forms';
 import { SortPipe } from './pipes/sort.pipe';
+import { FilterPipe } from './pipes/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { SortPipe } from './pipes/sort.pipe';
     CommentsCountComponent,
     VideoTitleComponent,
     MoreButtonComponent,
-    SortPipe
+    SortPipe,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,7 @@ export class HeaderComponent {
 
   @Output() public searchText: EventEmitter<String> = new EventEmitter();
   @Output() public sort: EventEmitter<String> = new EventEmitter();
+  @Output() public filter: EventEmitter<String> = new EventEmitter();
 
   constructor() { }
 
@@ -18,5 +19,9 @@ export class HeaderComponent {
 
   public onSort(text: string): void {
     this.sort.emit(text);
+  }
+
+  public onFilter(text: string): void {
+    this.filter.emit(text);
   }
 }

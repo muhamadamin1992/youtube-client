@@ -10,6 +10,7 @@ import { ISearchResponse } from '../../models/search-response.model';
 export class SearchResultsComponent {
 
   @Input() public sortText: string;
+  @Input() public filterText: string;
   public response: ISearchResponse = response;
 
   constructor() { }

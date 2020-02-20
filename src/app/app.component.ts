@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   public searchText: string = '';
   public sortText: string = '';
+  public filterText: string = '';
 
   public onSearch(text: string): void {
     this.searchText = text;
@@ -15,5 +16,9 @@ export class AppComponent {
 
   public onSort(text: string): void {
     this.sortText = text;
+  }
+
+  public onFilter(text: string): void {
+    this.filterText = text;
   }
 }

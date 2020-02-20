@@ -1,2 +1,2 @@
-<app-header (searchText)="onSearch($event)" (sort)="onSort($event)"></app-header>
-<app-search-results *ngIf="searchText" [sortText]="sortText"></app-search-results>
+<app-header (searchText)="onSearch($event)" (sort)="onSort($event)" (filter)="onFilter($event)"></app-header>
+<app-search-results *ngIf="searchText" [sortText]="sortText" [filterText]="filterText"></app-search-results>
