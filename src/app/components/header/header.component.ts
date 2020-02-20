@@ -8,10 +8,15 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class HeaderComponent {
 
   @Output() public searchText: EventEmitter<String> = new EventEmitter();
+  @Output() public sort: EventEmitter<String> = new EventEmitter();
 
   constructor() { }
 
   public onSearch(text: string): void {
     this.searchText.emit(text);
+  }
+
+  public onSort(text: string): void {
+    this.sort.emit(text);
   }
 }

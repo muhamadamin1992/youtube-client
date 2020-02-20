@@ -12,6 +12,11 @@ body {
   box-sizing: border-box;
 }
 
+a {
+  color: #2f80ed;
+  text-decoration: underline;
+}
+
 .container {
   margin: 0 auto;
   width: 1170px;
@@ -26,6 +31,10 @@ body {
 
 .justify-content-end {
   justify-content: flex-end;
+}
+
+.justify-content-center {
+  justify-content: center;
 }
 
 .align-items-center {

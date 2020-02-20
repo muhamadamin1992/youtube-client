@@ -1,1 +1,4 @@
-<p>sort-criterion works!</p>
+<div class="sort-criterion">
+  <div class="sort-criterion__label">Sorting by:</div>
+  <a *ngFor="let item of sortTexts" class="sort-criterion__item" href="#" (click)="onSort($event, item)">{{item}}</a>
+</div>

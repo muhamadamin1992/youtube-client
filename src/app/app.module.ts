@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SearchComponent } from './components/search/search.component';
-import { SortingComponent } from './components/sorting/sorting.component';
 import { SearchResultsComponent } from './components/search-results/search-results.component';
 import { CardComponent } from './components/card/card.component';
 import { LogoComponent } from './components/logo/logo.component';
@@ -21,13 +20,13 @@ import { CommentsCountComponent } from './components/comments-count/comments-cou
 import { VideoTitleComponent } from './components/video-title/video-title.component';
 import { MoreButtonComponent } from './components/more-button/more-button.component';
 import { FormsModule } from '@angular/forms';
+import { SortPipe } from './pipes/sort.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SearchComponent,
-    SortingComponent,
     SearchResultsComponent,
     CardComponent,
     LogoComponent,
@@ -42,7 +41,8 @@ import { FormsModule } from '@angular/forms';
     DislikesCountComponent,
     CommentsCountComponent,
     VideoTitleComponent,
-    MoreButtonComponent
+    MoreButtonComponent,
+    SortPipe
   ],
   imports: [
     BrowserModule,

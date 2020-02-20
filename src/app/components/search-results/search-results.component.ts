@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { response } from '../mock-response';
 import { ISearchResponse } from '../../models/search-response.model';
 
@@ -9,6 +9,7 @@ import { ISearchResponse } from '../../models/search-response.model';
 })
 export class SearchResultsComponent {
 
+  @Input() public sortText: string;
   public response: ISearchResponse = response;
 
   constructor() { }

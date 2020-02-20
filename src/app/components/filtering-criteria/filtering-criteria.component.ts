@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-filtering-criteria',
   templateUrl: './filtering-criteria.component.html',
-  styleUrls: ['./filtering-criteria.component.css']
+  styleUrls: ['./filtering-criteria.component.scss']
 })
-export class FilteringCriteriaComponent implements OnInit {
+export class FilteringCriteriaComponent {
+
+  @Output() public sort: EventEmitter<String> = new EventEmitter();
 
   constructor() { }
 
-  ngOnInit(): void {
+  public onSort(text: string): void {
+    this.sort.emit(text);
   }
-
 }
