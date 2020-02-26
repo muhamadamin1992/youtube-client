@@ -1,4 +1,5 @@
-import { Component, Output, EventEmitter, Input } from '@angular/core';
+import { Component } from '@angular/core';
+import { PostsService } from '../../services/posts/posts.service';
 
 @Component({
   selector: 'app-filter-input',
@@ -8,12 +9,11 @@ import { Component, Output, EventEmitter, Input } from '@angular/core';
 export class FilterInputComponent {
 
   public filterText: string = '';
-  @Output() public filter: EventEmitter<String> = new EventEmitter();
 
-  constructor() { }
+  constructor(private posts: PostsService) { }
 
   public onFilter(e: InputEvent): void {
-    this.filter.emit(this.filterText);
+    this.posts.filterText = this.filterText;
   }
 
 }

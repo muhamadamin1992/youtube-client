@@ -1,4 +1,5 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component } from '@angular/core';
+import { PostsService } from '../../services/posts/posts.service';
 
 @Component({
   selector: 'app-sort-criterion',
@@ -9,12 +10,10 @@ export class SortCriterionComponent {
 
   public sortTexts: string[] = ['date', 'count of views'];
 
-  @Output() public sort: EventEmitter<String> = new EventEmitter();
-
-  constructor() { }
+  constructor(private posts: PostsService) { }
 
   public onSort(event: Event, text: string): void {
     event.preventDefault();
-    this.sort.emit(text);
+    this.posts.sortText = text;
   }
 }

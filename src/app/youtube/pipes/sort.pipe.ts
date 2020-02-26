@@ -1,6 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { ICard } from '../models/card.model';
-import { from } from 'rxjs';
+import { ICard } from '../../core/models/card.model';
 
 @Pipe({
   name: 'sort'

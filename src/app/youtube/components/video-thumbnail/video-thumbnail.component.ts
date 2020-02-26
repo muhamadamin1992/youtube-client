@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { IThumbnail } from '../../models/thumbnail.model';
+import { IThumbnail } from '../../../core/models/thumbnail.model';
 
 @Component({
   selector: 'app-video-thumbnail',
