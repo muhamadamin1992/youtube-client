@@ -1,0 +1,4 @@
+<div class="filter">
+  <label class="filter__label" for="filter-text">by word or sentance</label>
+  <input type="text" id="filter-text" class="filter__input" [(ngModel)]="filterText" (input)="onFilter($event)">
+</div>

@@ -1,0 +1,14 @@
+.login-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  &__name {
+    margin-right: 8px;
+  }
+
+  &__profile {
+    background-color: #fff;
+    background-image: url('/assets/profile.svg');
+  }
+}

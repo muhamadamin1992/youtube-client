@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'youtube-client';
+  public searchText: string = '';
+  public sortText: string = '';
+  public filterText: string = '';
+
+  public onSearch(text: string): void {
+    this.searchText = text;
+  }
+
+  public onSort(text: string): void {
+    this.sortText = text;
+  }
+
+  public onFilter(text: string): void {
+    this.filterText = text;
+  }
 }

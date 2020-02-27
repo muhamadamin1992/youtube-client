@@ -1,0 +1,13 @@
+.sort-criterion {
+  display: flex;
+  align-items: center;
+
+  &__label {
+    margin-right: 11px;
+    color: #929292;
+  }
+
+  &__item {
+    margin-right: 21px;
+  }
+}

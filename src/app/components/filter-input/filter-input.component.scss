@@ -1,0 +1,15 @@
+.filter {
+  display: flex;
+  align-items: center;
+
+  &__label {
+    margin-right: 10px;
+    color: #2F80ED;
+  }
+
+  &__input {
+    border: none;
+    padding: .5px 2px;
+    font-size: 11px;
+  }
+}

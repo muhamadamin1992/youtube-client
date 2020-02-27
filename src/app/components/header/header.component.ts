@@ -1,15 +1,32 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
+
+  @Output() public searchText: EventEmitter<String> = new EventEmitter();
+  @Output() public sort: EventEmitter<String> = new EventEmitter();
+  @Output() public filter: EventEmitter<String> = new EventEmitter();
+  public criteriaOpened: boolean = false;
 
   constructor() { }
 
-  ngOnInit(): void {
+  public onSearch(text: string): void {
+    this.searchText.emit(text);
   }
 
+  public onSort(text: string): void {
+    this.sort.emit(text);
+  }
+
+  public onFilter(text: string): void {
+    this.filter.emit(text);
+  }
+
+  public onCriteriaToggle(): void {
+    this.criteriaOpened = !this.criteriaOpened;
+  }
 }
