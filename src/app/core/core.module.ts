@@ -11,6 +11,7 @@ import { FilterInputComponent } from './components/filter-input/filter-input.com
 import { HeaderComponent } from './components/header/header.component';
 import { SearchComponent } from './components/search/search.component';
 import { PostsService } from './services/posts/posts.service';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { PostsService } from './services/posts/posts.service';
   imports: [
     CommonModule,
     FormsModule,
+    RouterModule,
   ],
   providers: [
     PostsService,

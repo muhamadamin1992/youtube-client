@@ -90,4 +90,28 @@ img {
     background-position: center;
     background-repeat: no-repeat;
   }
+
+  &-lg {
+    padding: 7.5px 12px;
+    width: 124px;
+  }
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+.form-label {
+  display: inline-block;
+  margin-bottom: 4px;
+  font-size: 10px;
+  color: #828282;
+}
+
+.form-control {
+  border: none;
+  padding: 13px 8px;
+  width: 100%;
+  font-size: 10px;
+  background-color: #e0e0e0;
 }

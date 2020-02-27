@@ -3,7 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full',
-  loadChildren: () => import('./youtube/youtube.module').then(m => m.YoutubeModule) }
+  loadChildren: () => import('./youtube/youtube.module').then(m => m.YoutubeModule) },
+  { path: 'login', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule) }
 ];
 
 @NgModule({
