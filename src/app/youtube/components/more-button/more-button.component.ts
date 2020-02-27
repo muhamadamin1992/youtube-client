@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-more-button',
@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./more-button.component.scss']
 })
 export class MoreButtonComponent {
+
+  @Input() public id: string;
 
   constructor() { }
 
