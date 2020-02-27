@@ -1,0 +1,16 @@
+.auth {
+  padding: 45px 0;
+
+  &__wrap {
+    margin: 0 auto;
+    padding: 28px 20px 26px;
+    width: 344px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+  }
+
+  &__bottom {
+    padding-top: 17px;
+    text-align: right;
+  }
+}

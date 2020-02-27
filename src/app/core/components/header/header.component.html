@@ -1,0 +1,21 @@
+<header class="page-header">
+  <div class="container">
+    <div class="row justify-content-end align-items-center">
+      <div class="col-lg-6">
+        <div class="page-header__center">
+          <app-logo class="page-header__logo"></app-logo>
+          <app-search class="page-header__search"></app-search>
+          <app-settings-btn (criteriaToggle)="onCriteriaToggle()"></app-settings-btn>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <app-login-info></app-login-info>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <app-filtering-criteria [ngClass]="{'d-none': !criteriaOpened}"></app-filtering-criteria>
+      </div>
+    </div>
+  </div>
+</header>

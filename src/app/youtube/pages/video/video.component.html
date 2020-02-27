@@ -1,0 +1,18 @@
+<article class="video">
+  <div class="video__left">
+    <app-video-thumbnail [thumbnail]="post.snippet.thumbnails.maxres"></app-video-thumbnail>
+  </div>
+  <div class="video__right">
+    <div class="video__top">
+      <app-inner-title [title]="post.snippet.title"></app-inner-title>
+      <app-video-date [date]="post.snippet.publishedAt"></app-video-date>
+    </div>
+    <app-video-content [content]="post.snippet.description"></app-video-content>
+    <div class="video__bottom">
+      <app-views-count [count]="post.statistics.viewCount"></app-views-count>
+      <app-likes-count [count]="post.statistics.likeCount"></app-likes-count>
+      <app-dislikes-count [count]="post.statistics.dislikeCount"></app-dislikes-count>
+      <app-comments-count [count]="post.statistics.commentCount"></app-comments-count>
+    </div>
+  </div>
+</article>

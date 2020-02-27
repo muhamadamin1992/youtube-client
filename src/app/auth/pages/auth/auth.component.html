@@ -1,0 +1,12 @@
+<div class="auth">
+  <div class="container">
+    <form class="auth__wrap" (submit)="login.auth($event)">
+      <app-login-title></app-login-title>
+        <app-form-control label="login" [value]="login.name" (update)="login.updateName($event)"></app-form-control>
+        <app-form-control label="password" type="password" [value]="login.password" (update)="login.updatePassword($event)"></app-form-control>
+      <div class="auth__bottom">
+        <app-login-submit></app-login-submit>
+      </div>
+    </form>
+  </div>
+</div>
