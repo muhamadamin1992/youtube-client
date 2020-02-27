@@ -11,6 +11,9 @@ import { VideoComponent } from './pages/video/video.component';
 import { SortPipe } from './pipes/sort.pipe';
 import { FilterPipe } from './pipes/filter.pipe';
 import { SharedModule } from '../shared/shared.module';
+import { InnerTitleComponent } from './components/inner-title/inner-title.component';
+import { VideoContentComponent } from './components/video-content/video-content.component';
+import { VideoDateComponent } from './components/video-date/video-date.component';
 
 const routes: Routes = [
   { path: '', component: SearchResultsComponent, pathMatch: 'full' },
@@ -25,7 +28,10 @@ const routes: Routes = [
     MoreButtonComponent,
     SortPipe,
     FilterPipe,
-    VideoComponent
+    VideoComponent,
+    InnerTitleComponent,
+    VideoContentComponent,
+    VideoDateComponent
   ],
   imports: [
     CommonModule,
