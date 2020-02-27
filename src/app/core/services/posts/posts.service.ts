@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { ISearchResponse } from '../../../core/models/search-response.model';
+import { ISearchResponse } from '../../../shared/models/search-response.model';
 import { response } from './mock-response';
 
 @Injectable()
